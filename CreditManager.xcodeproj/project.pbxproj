@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346A2A88D1D500382005 /* AppDelegate.swift */; };
 		F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346C2A88D1D500382005 /* SceneDelegate.swift */; };
-		F8D1346F2A88D1D500382005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346E2A88D1D500382005 /* ViewController.swift */; };
 		F8D134722A88D1D500382005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D134702A88D1D500382005 /* Main.storyboard */; };
 		F8D134742A88D1D600382005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D134732A88D1D600382005 /* Assets.xcassets */; };
 		F8D134772A88D1D600382005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D134752A88D1D600382005 /* LaunchScreen.storyboard */; };
 		F8D134822A88D1D600382005 /* CreditManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134812A88D1D600382005 /* CreditManagerTests.swift */; };
 		F8D1348C2A88D1D600382005 /* CreditManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1348B2A88D1D600382005 /* CreditManagerUITests.swift */; };
 		F8D1348E2A88D1D600382005 /* CreditManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1348D2A88D1D600382005 /* CreditManagerUITestsLaunchTests.swift */; };
+		F8D1349F2A88D24100382005 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1349E2A88D24100382005 /* HomeViewController.swift */; };
+		F8D134A22A88D26A00382005 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134A12A88D26A00382005 /* RewardsViewController.swift */; };
+		F8D134A92A88D35400382005 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134A82A88D35400382005 /* HomeData.swift */; };
+		F8D134AC2A88D37600382005 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134AB2A88D37600382005 /* Constants.swift */; };
+		F8D134AE2A88E13300382005 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134AD2A88E13300382005 /* HomeTabBarController.swift */; };
+		F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134B12A88E5B500382005 /* PayViewController.swift */; };
+		F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134B32A88F22A00382005 /* DownloadUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		F8D134672A88D1D500382005 /* CreditManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1346A2A88D1D500382005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D1346C2A88D1D500382005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8D1346E2A88D1D500382005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8D134712A88D1D500382005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8D134732A88D1D600382005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D134762A88D1D600382005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		F8D134872A88D1D600382005 /* CreditManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1348B2A88D1D600382005 /* CreditManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditManagerUITests.swift; sourceTree = "<group>"; };
 		F8D1348D2A88D1D600382005 /* CreditManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8D1349E2A88D24100382005 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8D134A12A88D26A00382005 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		F8D134A82A88D35400382005 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		F8D134AB2A88D37600382005 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8D134AD2A88E13300382005 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		F8D134B12A88E5B500382005 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		F8D134B32A88F22A00382005 /* DownloadUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,9 @@
 		F8D134692A88D1D500382005 /* CreditManager */ = {
 			isa = PBXGroup;
 			children = (
+				F8D1349A2A88D21F00382005 /* Screens */,
 				F8D1346A2A88D1D500382005 /* AppDelegate.swift */,
 				F8D1346C2A88D1D500382005 /* SceneDelegate.swift */,
-				F8D1346E2A88D1D500382005 /* ViewController.swift */,
 				F8D134702A88D1D500382005 /* Main.storyboard */,
 				F8D134732A88D1D600382005 /* Assets.xcassets */,
 				F8D134752A88D1D600382005 /* LaunchScreen.storyboard */,
@@ -125,6 +137,100 @@
 				F8D1348D2A88D1D600382005 /* CreditManagerUITestsLaunchTests.swift */,
 			);
 			path = CreditManagerUITests;
+			sourceTree = "<group>";
+		};
+		F8D1349A2A88D21F00382005 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134A32A88D29800382005 /* AppManager */,
+				F8D134AF2A88E59A00382005 /* PAY */,
+				F8D1349C2A88D22B00382005 /* Rewards */,
+				F8D1349B2A88D22700382005 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F8D1349B2A88D22700382005 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8D1349D2A88D23500382005 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8D1349C2A88D22B00382005 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134A02A88D26000382005 /* View */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		F8D1349D2A88D23500382005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D1349E2A88D24100382005 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D134A02A88D26000382005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134A12A88D26A00382005 /* RewardsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D134A32A88D29800382005 /* AppManager */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134AA2A88D36A00382005 /* Utilities */,
+				F8D134A72A88D33600382005 /* Model */,
+				F8D134A42A88D2A000382005 /* View */,
+			);
+			path = AppManager;
+			sourceTree = "<group>";
+		};
+		F8D134A42A88D2A000382005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134AD2A88E13300382005 /* HomeTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D134A72A88D33600382005 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134A82A88D35400382005 /* HomeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8D134AA2A88D36A00382005 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134AB2A88D37600382005 /* Constants.swift */,
+				F8D134B32A88F22A00382005 /* DownloadUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8D134AF2A88E59A00382005 /* PAY */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134B02A88E5A500382005 /* View */,
+			);
+			path = PAY;
+			sourceTree = "<group>";
+		};
+		F8D134B02A88E5A500382005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134B12A88E5B500382005 /* PayViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D1346F2A88D1D500382005 /* ViewController.swift in Sources */,
+				F8D134A22A88D26A00382005 /* RewardsViewController.swift in Sources */,
 				F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */,
+				F8D134A92A88D35400382005 /* HomeData.swift in Sources */,
+				F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */,
+				F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */,
 				F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */,
+				F8D134AC2A88D37600382005 /* Constants.swift in Sources */,
+				F8D1349F2A88D24100382005 /* HomeViewController.swift in Sources */,
+				F8D134AE2A88E13300382005 /* HomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
