@@ -22,6 +22,11 @@
 		F8D134AE2A88E13300382005 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134AD2A88E13300382005 /* HomeTabBarController.swift */; };
 		F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134B12A88E5B500382005 /* PayViewController.swift */; };
 		F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134B32A88F22A00382005 /* DownloadUtility.swift */; };
+		F8D134B62A88FB9800382005 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134B52A88FB9800382005 /* HomeDataManager.swift */; };
+		F8D134BF2A89140300382005 /* ProfileNavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D134BE2A89140300382005 /* ProfileNavBarView.xib */; };
+		F8D134C12A89145100382005 /* ProfileNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134C02A89145100382005 /* ProfileNavBarView.swift */; };
+		F8D134C32A8923F300382005 /* WalletNavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D134C22A8923F300382005 /* WalletNavBarView.xib */; };
+		F8D134C52A89242E00382005 /* WalletNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D134C42A89242E00382005 /* WalletNavBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		F8D134AD2A88E13300382005 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		F8D134B12A88E5B500382005 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		F8D134B32A88F22A00382005 /* DownloadUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUtility.swift; sourceTree = "<group>"; };
+		F8D134B52A88FB9800382005 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		F8D134BE2A89140300382005 /* ProfileNavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileNavBarView.xib; sourceTree = "<group>"; };
+		F8D134C02A89145100382005 /* ProfileNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavBarView.swift; sourceTree = "<group>"; };
+		F8D134C22A8923F300382005 /* WalletNavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletNavBarView.xib; sourceTree = "<group>"; };
+		F8D134C42A89242E00382005 /* WalletNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletNavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,7 @@
 		F8D1349A2A88D21F00382005 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F8D134BB2A8912A700382005 /* NavBarViews */,
 				F8D134A32A88D29800382005 /* AppManager */,
 				F8D134AF2A88E59A00382005 /* PAY */,
 				F8D1349C2A88D22B00382005 /* Rewards */,
@@ -204,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D134A82A88D35400382005 /* HomeData.swift */,
+				F8D134B52A88FB9800382005 /* HomeDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +243,33 @@
 				F8D134B12A88E5B500382005 /* PayViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8D134BB2A8912A700382005 /* NavBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134BD2A8913E700382005 /* Source */,
+				F8D134BC2A8913DF00382005 /* View */,
+			);
+			path = NavBarViews;
+			sourceTree = "<group>";
+		};
+		F8D134BC2A8913DF00382005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134BE2A89140300382005 /* ProfileNavBarView.xib */,
+				F8D134C22A8923F300382005 /* WalletNavBarView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D134BD2A8913E700382005 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F8D134C02A89145100382005 /* ProfileNavBarView.swift */,
+				F8D134C42A89242E00382005 /* WalletNavBarView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +376,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D134BF2A89140300382005 /* ProfileNavBarView.xib in Resources */,
 				F8D134772A88D1D600382005 /* LaunchScreen.storyboard in Resources */,
 				F8D134742A88D1D600382005 /* Assets.xcassets in Resources */,
+				F8D134C32A8923F300382005 /* WalletNavBarView.xib in Resources */,
 				F8D134722A88D1D500382005 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D134B62A88FB9800382005 /* HomeDataManager.swift in Sources */,
 				F8D134A22A88D26A00382005 /* RewardsViewController.swift in Sources */,
 				F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */,
+				F8D134C12A89145100382005 /* ProfileNavBarView.swift in Sources */,
 				F8D134A92A88D35400382005 /* HomeData.swift in Sources */,
 				F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */,
 				F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */,
@@ -373,6 +416,7 @@
 				F8D134AC2A88D37600382005 /* Constants.swift in Sources */,
 				F8D1349F2A88D24100382005 /* HomeViewController.swift in Sources */,
 				F8D134AE2A88E13300382005 /* HomeTabBarController.swift in Sources */,
+				F8D134C52A89242E00382005 /* WalletNavBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

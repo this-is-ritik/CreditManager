@@ -11,7 +11,7 @@ class RewardsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "REWARDS"
         
     }
     

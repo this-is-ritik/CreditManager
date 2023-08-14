@@ -7,50 +7,28 @@
 
 import UIKit
 
-class HomeTabBarController: UITabBarController {
+class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     private var homeDataModel: HomeData? = nil
     private var tabBarVCs: [UIViewController] = []
-    private var rightNavBarItems: [UIBarButtonItem] = []
-    private var leftNavBarItems: [UIBarButtonItem] = []
+    private var selectedInd: Int = .zero
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hidesBottomBarWhenPushed = true
         self.tabBar.backgroundColor = UIColor.white
+        self.delegate = self
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.lightGray.cgColor
-        print(self.navigationController?.isNavigationBarHidden)
-        
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
         self.homeApiCall()
     }
     
     private func updateOnApiSuccess() {
-        self.reloadNavBar()
         self.reloadTabBar()
         UIView.animate(withDuration: 0.6, delay: .zero, options: .curveEaseInOut, animations: {
-            self.navigationItem.setLeftBarButtonItems(self.leftNavBarItems, animated: false)
-            self.navigationItem.setRightBarButtonItems(self.rightNavBarItems, animated: false)
             self.setViewControllers(self.tabBarVCs, animated: false)
+            self.selectedIndex = self.selectedInd
         })
-    }
-    private func reloadNavBar() {
-        if let model = self.homeDataModel?.homeLayoutData.navBarData {
-            // left content update
-            let leftButton = UIBarButtonItem(title: model.leftContent?.title,  image: nil, target: self, action: nil)
-            self.leftNavBarItems = [leftButton]
-            
-            // right content update
-            var rightButtons = [UIBarButtonItem]()
-            for (_, button) in (model.rightContent?.ctaButtons ?? []).enumerated() {
-                let imgView = UIImageView()
-                imgView.download(with: button.img) { img in
-                    let btn = UIBarButtonItem(title: button.title, image: img, target: self, action: nil)
-                    rightButtons.append(btn)
-                }
-            }
-            self.rightNavBarItems = rightButtons
-        }
     }
     private func reloadTabBar() {
         if let model = self.homeDataModel?.homeLayoutData.tabBarData {
@@ -66,10 +44,11 @@ class HomeTabBarController: UITabBarController {
                     
                     vc.tabBarItem = item
                     
-                    viewControllers.append(vc)
+                    viewControllers.append(UINavigationController(rootViewController: vc))
                 }
             }
             self.tabBarVCs = viewControllers
+            self.selectedInd = model.selected
         }
     }
     private func homeApiCall() {
@@ -91,9 +70,6 @@ class HomeTabBarController: UITabBarController {
         }).resume()
     }
 
-}
-extension HomeTabBarController: UITabBarControllerDelegate {
-    
 }
 
 extension HomeTabBarController {

@@ -100,4 +100,5 @@ class NavBarButton: Codable {
     let title: String?
     let cornerRadius: CGFloat?
     let img: String?
+    let borderColor: String?
 }
