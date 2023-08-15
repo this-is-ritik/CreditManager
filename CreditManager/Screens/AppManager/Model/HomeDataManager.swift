@@ -20,4 +20,10 @@ class HomeDataManager {
     public var navBarData: NavBarModel? {
         self.model?.homeLayoutData.navBarData
     }
+    public var tableData: TableData? {
+        self.model?.tableData
+    }
+    public var tabBarData: TabBarModel? {
+        self.model?.homeLayoutData.tabBarData
+    }
 }

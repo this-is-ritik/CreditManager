@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BankDueCardTVC" rowHeight="41" id="sme-0y-dYb" customClass="BankDueCardTVC" customModule="CreditManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sme-0y-dYb" id="NXD-Cn-dvr">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JK1-mB-Y6A">
+                        <rect key="frame" x="10" y="2" width="32" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="6P1-Fc-ICx"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="e3e-tz-JBe">
+                        <rect key="frame" x="52" y="2" width="292.66666666666669" height="37"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-lQ-i5t">
+                                <rect key="frame" x="0.0" y="0.0" width="292.66666666666669" height="14.666666666666666"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37W-RI-PLB">
+                                <rect key="frame" x="0.0" y="16.666666666666671" width="292.66666666666669" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-La-uw5">
+                        <rect key="frame" x="344.66666666666669" y="2" width="41.333333333333314" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeI-8O-5fx">
+                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-40-9pZ">
+                                <rect key="frame" x="0.0" y="22.333333333333332" width="41.333333333333336" height="14.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e3e-tz-JBe" firstAttribute="leading" secondItem="JK1-mB-Y6A" secondAttribute="trailing" constant="10" id="5GK-VR-nh5"/>
+                    <constraint firstItem="Xqh-La-uw5" firstAttribute="leading" secondItem="e3e-tz-JBe" secondAttribute="trailing" id="63p-rS-NxT"/>
+                    <constraint firstAttribute="trailing" secondItem="Xqh-La-uw5" secondAttribute="trailing" constant="10" id="FkP-LO-yIe"/>
+                    <constraint firstItem="JK1-mB-Y6A" firstAttribute="leading" secondItem="NXD-Cn-dvr" secondAttribute="leading" constant="10" id="Nsi-7B-bF4"/>
+                    <constraint firstAttribute="bottom" secondItem="e3e-tz-JBe" secondAttribute="bottom" constant="2" id="PKB-d1-nga"/>
+                    <constraint firstItem="e3e-tz-JBe" firstAttribute="top" secondItem="NXD-Cn-dvr" secondAttribute="top" constant="2" id="bZa-bN-laN"/>
+                    <constraint firstAttribute="bottom" secondItem="Xqh-La-uw5" secondAttribute="bottom" constant="2" id="d6v-DU-14h"/>
+                    <constraint firstItem="Xqh-La-uw5" firstAttribute="top" secondItem="NXD-Cn-dvr" secondAttribute="top" constant="2" id="ghq-d6-g9s"/>
+                    <constraint firstAttribute="bottom" secondItem="JK1-mB-Y6A" secondAttribute="bottom" constant="2" id="luI-E8-C2S"/>
+                    <constraint firstItem="JK1-mB-Y6A" firstAttribute="top" secondItem="NXD-Cn-dvr" secondAttribute="top" constant="2" id="zRD-61-KYN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bankImg" destination="JK1-mB-Y6A" id="P4X-kk-L9F"/>
+                <outlet property="bankNameLbl" destination="Gof-lQ-i5t" id="1wC-W8-QD5"/>
+                <outlet property="cardTypeLbl" destination="37W-RI-PLB" id="ctv-th-LXb"/>
+                <outlet property="dueAmountLbl" destination="MeI-8O-5fx" id="u8a-eX-ABI"/>
+                <outlet property="dueDateLbl" destination="Z6L-40-9pZ" id="tgQ-DH-XSw"/>
+            </connections>
+            <point key="canvasLocation" x="283.96946564885496" y="-66.549295774647888"/>
+        </tableViewCell>
+    </objects>
+</document>

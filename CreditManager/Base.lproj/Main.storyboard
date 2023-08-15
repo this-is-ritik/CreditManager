@@ -45,9 +45,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ike-XW-Inn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m5z-vV-W19">
+                                <rect key="frame" x="24" y="59" width="345" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KFJ-EH-Uv0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m5z-vV-W19" firstAttribute="top" secondItem="KFJ-EH-Uv0" secondAttribute="top" id="DHR-Fk-UcR"/>
+                            <constraint firstItem="KFJ-EH-Uv0" firstAttribute="bottom" secondItem="m5z-vV-W19" secondAttribute="bottom" id="DRg-gD-mzU"/>
+                            <constraint firstItem="KFJ-EH-Uv0" firstAttribute="trailing" secondItem="m5z-vV-W19" secondAttribute="trailing" constant="24" id="LMe-mw-0k4"/>
+                            <constraint firstItem="m5z-vV-W19" firstAttribute="leading" secondItem="KFJ-EH-Uv0" secondAttribute="leading" constant="24" id="eqD-lg-g8d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="m5z-vV-W19" id="opR-KG-iK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXQ-bf-xEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,6 +74,7 @@
                 <tabBarController storyboardIdentifier="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="kKt-Ug-nFe" customClass="HomeTabBarController" customModule="CreditManager" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hrL-uW-9LE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

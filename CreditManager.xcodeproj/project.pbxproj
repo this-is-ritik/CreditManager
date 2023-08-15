@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80DC9EC2A8BB3C9007A3B64 /* ImageStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC9EB2A8BB3C9007A3B64 /* ImageStorageManager.swift */; };
+		F845DDC32A8AD91500F8A7E5 /* AmountDueCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DDC22A8AD91500F8A7E5 /* AmountDueCard.xib */; };
+		F845DDC72A8AD95100F8A7E5 /* AmountDueCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDC62A8AD95100F8A7E5 /* AmountDueCardTVC.swift */; };
+		F845DDC92A8ADA6B00F8A7E5 /* BankDueCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DDC82A8ADA6B00F8A7E5 /* BankDueCard.xib */; };
+		F845DDCB2A8ADA8500F8A7E5 /* BankDueCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDCA2A8ADA8500F8A7E5 /* BankDueCardTVC.swift */; };
+		F845DDCD2A8ADE8A00F8A7E5 /* CreditScoreCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DDCC2A8ADE8A00F8A7E5 /* CreditScoreCard.xib */; };
+		F845DDCF2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDCE2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift */; };
+		F845DDD12A8AE25200F8A7E5 /* LinkPersuasionCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DDD02A8AE25200F8A7E5 /* LinkPersuasionCard.xib */; };
+		F845DDD32A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDD22A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift */; };
+		F845DDD62A8AE65900F8A7E5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDD52A8AE65900F8A7E5 /* HomeViewModel.swift */; };
+		F845DDD92A8AE7E000F8A7E5 /* CardTemplateIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDD82A8AE7E000F8A7E5 /* CardTemplateIds.swift */; };
+		F845DDDC2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDDB2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift */; };
+		F845DDDE2A8AEA8300F8A7E5 /* BankDueCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */; };
+		F845DDE02A8AEAA100F8A7E5 /* CreditScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */; };
+		F845DDE22A8AEAE300F8A7E5 /* LinkPersuasionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */; };
 		F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346A2A88D1D500382005 /* AppDelegate.swift */; };
 		F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346C2A88D1D500382005 /* SceneDelegate.swift */; };
 		F8D134722A88D1D500382005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D134702A88D1D500382005 /* Main.storyboard */; };
@@ -47,6 +62,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80DC9EB2A8BB3C9007A3B64 /* ImageStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorageManager.swift; sourceTree = "<group>"; };
+		F845DDC22A8AD91500F8A7E5 /* AmountDueCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountDueCard.xib; sourceTree = "<group>"; };
+		F845DDC62A8AD95100F8A7E5 /* AmountDueCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountDueCardTVC.swift; sourceTree = "<group>"; };
+		F845DDC82A8ADA6B00F8A7E5 /* BankDueCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankDueCard.xib; sourceTree = "<group>"; };
+		F845DDCA2A8ADA8500F8A7E5 /* BankDueCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDueCardTVC.swift; sourceTree = "<group>"; };
+		F845DDCC2A8ADE8A00F8A7E5 /* CreditScoreCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreCard.xib; sourceTree = "<group>"; };
+		F845DDCE2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCardTVC.swift; sourceTree = "<group>"; };
+		F845DDD02A8AE25200F8A7E5 /* LinkPersuasionCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkPersuasionCard.xib; sourceTree = "<group>"; };
+		F845DDD22A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPersuasionCardTVC.swift; sourceTree = "<group>"; };
+		F845DDD52A8AE65900F8A7E5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F845DDD82A8AE7E000F8A7E5 /* CardTemplateIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTemplateIds.swift; sourceTree = "<group>"; };
+		F845DDDB2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountDueCardModel.swift; sourceTree = "<group>"; };
+		F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDueCardModel.swift; sourceTree = "<group>"; };
+		F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModel.swift; sourceTree = "<group>"; };
+		F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPersuasionModel.swift; sourceTree = "<group>"; };
 		F8D134672A88D1D500382005 /* CreditManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1346A2A88D1D500382005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D1346C2A88D1D500382005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +128,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F845DDBF2A8AD87B00F8A7E5 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDDA2A8AEA3500F8A7E5 /* Model */,
+				F845DDC12A8AD88E00F8A7E5 /* Source */,
+				F845DDC02A8AD88800F8A7E5 /* Views */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		F845DDC02A8AD88800F8A7E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDC22A8AD91500F8A7E5 /* AmountDueCard.xib */,
+				F845DDC82A8ADA6B00F8A7E5 /* BankDueCard.xib */,
+				F845DDCC2A8ADE8A00F8A7E5 /* CreditScoreCard.xib */,
+				F845DDD02A8AE25200F8A7E5 /* LinkPersuasionCard.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F845DDC12A8AD88E00F8A7E5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDC62A8AD95100F8A7E5 /* AmountDueCardTVC.swift */,
+				F845DDCA2A8ADA8500F8A7E5 /* BankDueCardTVC.swift */,
+				F845DDCE2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift */,
+				F845DDD22A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F845DDD42A8AE64A00F8A7E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDD52A8AE65900F8A7E5 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F845DDD72A8AE7CD00F8A7E5 /* CardTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDD82A8AE7E000F8A7E5 /* CardTemplateIds.swift */,
+			);
+			path = CardTemplates;
+			sourceTree = "<group>";
+		};
+		F845DDDA2A8AEA3500F8A7E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F845DDDB2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift */,
+				F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */,
+				F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */,
+				F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F8D1345E2A88D1D500382005 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +241,8 @@
 		F8D1349A2A88D21F00382005 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F845DDD72A8AE7CD00F8A7E5 /* CardTemplates */,
+				F845DDBF2A8AD87B00F8A7E5 /* Cards */,
 				F8D134BB2A8912A700382005 /* NavBarViews */,
 				F8D134A32A88D29800382005 /* AppManager */,
 				F8D134AF2A88E59A00382005 /* PAY */,
@@ -164,6 +255,7 @@
 		F8D1349B2A88D22700382005 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F845DDD42A8AE64A00F8A7E5 /* ViewModel */,
 				F8D1349D2A88D23500382005 /* View */,
 			);
 			path = Home;
@@ -225,6 +317,7 @@
 			children = (
 				F8D134AB2A88D37600382005 /* Constants.swift */,
 				F8D134B32A88F22A00382005 /* DownloadUtility.swift */,
+				F80DC9EB2A8BB3C9007A3B64 /* ImageStorageManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -377,8 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D134BF2A89140300382005 /* ProfileNavBarView.xib in Resources */,
+				F845DDD12A8AE25200F8A7E5 /* LinkPersuasionCard.xib in Resources */,
+				F845DDC92A8ADA6B00F8A7E5 /* BankDueCard.xib in Resources */,
 				F8D134772A88D1D600382005 /* LaunchScreen.storyboard in Resources */,
+				F845DDC32A8AD91500F8A7E5 /* AmountDueCard.xib in Resources */,
 				F8D134742A88D1D600382005 /* Assets.xcassets in Resources */,
+				F845DDCD2A8ADE8A00F8A7E5 /* CreditScoreCard.xib in Resources */,
 				F8D134C32A8923F300382005 /* WalletNavBarView.xib in Resources */,
 				F8D134722A88D1D500382005 /* Main.storyboard in Resources */,
 			);
@@ -405,17 +502,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F845DDD62A8AE65900F8A7E5 /* HomeViewModel.swift in Sources */,
 				F8D134B62A88FB9800382005 /* HomeDataManager.swift in Sources */,
 				F8D134A22A88D26A00382005 /* RewardsViewController.swift in Sources */,
 				F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */,
 				F8D134C12A89145100382005 /* ProfileNavBarView.swift in Sources */,
+				F845DDD32A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift in Sources */,
+				F845DDD92A8AE7E000F8A7E5 /* CardTemplateIds.swift in Sources */,
 				F8D134A92A88D35400382005 /* HomeData.swift in Sources */,
 				F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */,
+				F845DDC72A8AD95100F8A7E5 /* AmountDueCardTVC.swift in Sources */,
 				F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */,
 				F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */,
+				F845DDCF2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift in Sources */,
+				F845DDE02A8AEAA100F8A7E5 /* CreditScoreModel.swift in Sources */,
 				F8D134AC2A88D37600382005 /* Constants.swift in Sources */,
+				F845DDCB2A8ADA8500F8A7E5 /* BankDueCardTVC.swift in Sources */,
 				F8D1349F2A88D24100382005 /* HomeViewController.swift in Sources */,
 				F8D134AE2A88E13300382005 /* HomeTabBarController.swift in Sources */,
+				F845DDE22A8AEAE300F8A7E5 /* LinkPersuasionModel.swift in Sources */,
+				F80DC9EC2A8BB3C9007A3B64 /* ImageStorageManager.swift in Sources */,
+				F845DDDC2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift in Sources */,
+				F845DDDE2A8AEA8300F8A7E5 /* BankDueCardModel.swift in Sources */,
 				F8D134C52A89242E00382005 /* WalletNavBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,8 +15,15 @@ class ProfileNavBarView: UIView {
     }
 
     
-    func configureView(with model: NavBarButton) {
-        
+    func configureView(with model: NavBarButton?) {
+        if let urlStr = model?.img, let url = URL(string: urlStr) {
+            ImageDownloader.shared.downloadImage(withURL: url, completion: { image in
+                if let image {
+                    self.imgView.image = image.resizeImage(newWidth: 32)
+                }
+                
+            })
+        }
         
     }
 }

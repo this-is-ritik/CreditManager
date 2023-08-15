@@ -18,7 +18,12 @@ class WalletNavBarView: UIView {
     
     func configure(with model: NavBarButton?) {
         self.btn.setTitle(model?.title, for: .normal)
-        self.btn.setImage(UIImage(named: model?.img ?? "Chips", in: .main, with: .none), for: .normal)
+        if let urlStr = model?.img, let url = URL(string: urlStr) {
+            ImageDownloader.shared.downloadImage(withURL: url, completion: { image in
+                self.btn.setImage(image?.resizeImage(newWidth: 16), for: .normal)
+                
+            })
+        }
         self.layer.borderColor = UIColor(hex: model?.borderColor).cgColor
         self.layer.borderWidth = 0.5
         self.layer.cornerRadius = model?.cornerRadius ?? .zero
