@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExploreVoucherCVC" id="eac-jR-t3a" customClass="ExploreVoucherCVC" customModule="CreditManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V31-KU-zYC">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="191"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blP-Aq-7zm">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="191"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPZ-X3-vi3">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="161"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-C6-SJD">
+                                        <rect key="frame" x="0.0" y="0.0" width="271" height="156"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-Hh-c03">
+                                                <rect key="frame" x="111.66666666666669" y="58" width="48" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="VWe-xr-lek"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ev6-j1-xaA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dcj-Hh-c03" firstAttribute="centerX" secondItem="eXZ-C6-SJD" secondAttribute="centerX" id="cNM-UE-giB"/>
+                                            <constraint firstItem="dcj-Hh-c03" firstAttribute="centerY" secondItem="eXZ-C6-SJD" secondAttribute="centerY" id="mS4-HX-JSV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="eXZ-C6-SJD" firstAttribute="leading" secondItem="YPZ-X3-vi3" secondAttribute="leading" id="Alc-nf-Mz8"/>
+                                    <constraint firstAttribute="trailing" secondItem="eXZ-C6-SJD" secondAttribute="trailing" constant="5" id="MGs-Fb-szW"/>
+                                    <constraint firstAttribute="bottom" secondItem="eXZ-C6-SJD" secondAttribute="bottom" constant="5" id="oe0-9U-EJJ"/>
+                                    <constraint firstItem="eXZ-C6-SJD" firstAttribute="top" secondItem="YPZ-X3-vi3" secondAttribute="top" id="zxY-78-MzF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVa-K1-dmH">
+                                <rect key="frame" x="0.0" y="161" width="276" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iVa-K1-dmH" firstAttribute="leading" secondItem="YPZ-X3-vi3" secondAttribute="leading" id="E5b-Oy-Dfa"/>
+                            <constraint firstItem="YPZ-X3-vi3" firstAttribute="top" secondItem="blP-Aq-7zm" secondAttribute="top" id="KPu-yb-ec7"/>
+                            <constraint firstAttribute="bottom" secondItem="iVa-K1-dmH" secondAttribute="bottom" id="PhE-nC-Jpx"/>
+                            <constraint firstItem="YPZ-X3-vi3" firstAttribute="trailing" secondItem="iVa-K1-dmH" secondAttribute="trailing" id="UEz-1S-87F"/>
+                            <constraint firstItem="YPZ-X3-vi3" firstAttribute="leading" secondItem="blP-Aq-7zm" secondAttribute="leading" id="lvE-OG-LPC"/>
+                            <constraint firstAttribute="bottom" secondItem="YPZ-X3-vi3" secondAttribute="bottom" constant="30" id="oj2-h9-AlO"/>
+                            <constraint firstAttribute="trailing" secondItem="YPZ-X3-vi3" secondAttribute="trailing" id="w3k-4z-zv3"/>
+                            <constraint firstItem="iVa-K1-dmH" firstAttribute="top" secondItem="YPZ-X3-vi3" secondAttribute="bottom" id="yaZ-Vl-9yf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="blP-Aq-7zm" firstAttribute="top" secondItem="V31-KU-zYC" secondAttribute="top" id="DZt-9G-Nus"/>
+                    <constraint firstAttribute="bottom" secondItem="blP-Aq-7zm" secondAttribute="bottom" id="Keu-3D-9NB"/>
+                    <constraint firstItem="blP-Aq-7zm" firstAttribute="leading" secondItem="V31-KU-zYC" secondAttribute="leading" id="oeE-7k-018"/>
+                    <constraint firstAttribute="trailing" secondItem="blP-Aq-7zm" secondAttribute="trailing" id="x1u-uM-pzW"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="276" height="191"/>
+            <connections>
+                <outlet property="bgView" destination="YPZ-X3-vi3" id="f70-Yi-FEf"/>
+                <outlet property="bottomTitle" destination="iVa-K1-dmH" id="T60-u6-WpP"/>
+                <outlet property="imgView" destination="dcj-Hh-c03" id="8r6-q0-q7k"/>
+                <outlet property="mainView" destination="eXZ-C6-SJD" id="nVM-ac-H1u"/>
+            </connections>
+            <point key="canvasLocation" x="155.72519083969465" y="71.478873239436624"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

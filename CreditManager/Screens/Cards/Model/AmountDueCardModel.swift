@@ -9,7 +9,7 @@ import Foundation
 
 class AmountDueCardModel: BaseCardData {
     let sectionData: SectionData?
-        let bankDueCardData: [BankDueCardModel]?
+    let bankDueCardData: [BankDueCardModel]?
     enum CodingKeys: String, CodingKey {
         case sectionData
         case bankDueCardData
@@ -31,12 +31,4 @@ class SectionData: Codable {
     let textColor: String?
     let bgColor: String?
     
-    init(_ data: [String: JsonCodableValue]? = nil) {
-        self.headerText = data?["headerText"] as? String
-        self.totalAmount = data?["totalAmount"] as? String
-        self.ctaText = data?["ctaText"] as? String
-        self.ctaImg = data?["ctaImg"] as? String
-        self.textColor = data?["textColor"] as? String
-        self.bgColor = data?["bgColor"] as? String
-    }
 }

@@ -1,0 +1,13 @@
+diff a/CreditManager/Screens/AppManager/View/HomeTabBarController.swift b/CreditManager/Screens/AppManager/View/HomeTabBarController.swift	(rejected hunks)
+@@ -39,8 +39,9 @@ class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
+                 if let vc = self.getViewController(from: screen.templateId) {
+                     
+                     // create a tabbar item for that vc
+-                    let item = UITabBarItem(title: screen.title, image: UIImage(named: screen.img ?? "HOME", in: nil, with: nil)?.withRenderingMode(.alwaysOriginal), tag: index)
+-                    item.selectedImage = UIImage(named: (screen.selectedImg ?? "HOME_selected"), in: nil, with: nil)?.withRenderingMode(.alwaysOriginal)
++                    let item = UITabBarItem(title: screen.title, image: UIImage(named: screen.img ?? "HOME", in: .main, with: nil)?.withRenderingMode(.alwaysOriginal), tag: index)
++                    print(screen.selectedImg)
++                    item.selectedImage = UIImage(named: (screen.selectedImg ?? "Rewards_selected"), in: .main, with: nil)?.withRenderingMode(.alwaysOriginal)
+                     
+                     vc.tabBarItem = item
+                     

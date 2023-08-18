@@ -11,6 +11,7 @@ class AmountDueCardTVC: UITableViewCell {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bottomCta: UIButton!
     
+    @IBOutlet weak var bottomBgView: UIView!
     @IBOutlet weak var bgView: UIView!
     static let reuseIdentifier: String = "AmountDueCardTVC"
     private var model: AmountDueCardModel?
@@ -20,8 +21,14 @@ class AmountDueCardTVC: UITableViewCell {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.bgView.layer.borderWidth = 1
+//        self.bottomBgView.layer.borderWidth = 1
+        self.contentView.layer.borderWidth = 1
+        self.contentView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
         self.bgView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
         self.bgView.layer.cornerRadius = 16
+        self.bottomBgView.layer.cornerRadius = 16
+        self.contentView.layer.cornerRadius = 16
+        
         self.tableView.estimatedRowHeight = 100
         self.tableView.rowHeight = UITableView.automaticDimension
     }

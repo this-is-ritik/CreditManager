@@ -1,0 +1,89 @@
+diff a/CreditManager/Screens/AppManager/Utilities/DownloadUtility.swift b/CreditManager/Screens/AppManager/Utilities/DownloadUtility.swift	(rejected hunks)
+@@ -8,6 +8,16 @@
+ import Foundation
+ import UIKit
+ 
++public enum ShadowPosition {
++    case Top
++    case Bottom
++    case Left
++    case Right
++    case TopLeft
++    case BottomRight
++    case All
++}
++
+ extension UIImageView {
+     public func download(with url: String?, closure: @escaping (UIImage?) -> Void) {
+         guard let url, let imgUrl = URL(string: url) else { return }
+@@ -29,6 +39,70 @@ extension UIView {
+     class func fromNib<T: UIView>() -> T {
+         return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+     }
++    
++    func addDropShadow(shadowRadius: CGFloat? = nil) {
++        
++        self.layer.masksToBounds = false
++        
++        // shadow
++        self.layer.shadowColor = UIColor.black.cgColor
++        self.layer.shadowOffset = CGSize(width: 0, height: 1.2)
++        self.layer.shadowOpacity = 0.2
++        self.layer.shadowRadius = shadowRadius ?? self.layer.cornerRadius
++        
++        self.layer.shadowPath = UIBezierPath(roundedRect: layer.bounds, cornerRadius: self.layer.cornerRadius == 0 ? 4.0 : self.layer.cornerRadius).cgPath
++        self.layer.shouldRasterize = true
++        self.layer.rasterizationScale = UIScreen.main.scale
++    }
++    
++    func addDefaultShadow(to layer: CALayer? = nil, shadowOpacity: Float = 0.2, shadowRadius: CGFloat = 2.0, pos: ShadowPosition = .All, shadowIntense: CGFloat = 1, shadowColor: CGColor = UIColor.black.cgColor) {
++        
++        let shadowLayer = layer ?? self.layer
++        shadowLayer.masksToBounds = false
++        
++        // shadow
++        shadowLayer.shadowColor = shadowColor
++        shadowLayer.shadowOpacity = shadowOpacity
++        shadowLayer.shadowRadius = shadowRadius
++        
++        switch pos {
++        case .Left:
++            shadowLayer.shadowOffset = CGSize(width: shadowIntense * -1, height: 0)
++        case .Right:
++            shadowLayer.shadowOffset = CGSize(width: shadowIntense, height: 0)
++        case .Top:
++            shadowLayer.shadowOffset = CGSize(width: 0, height: shadowIntense * -1)
++        case .Bottom:
++            shadowLayer.shadowOffset = CGSize(width: 0, height: shadowIntense)
++        case .TopLeft:
++            shadowLayer.shadowOffset = CGSize(width: shadowIntense * -1, height: shadowIntense * -1)
++        case .BottomRight:
++            shadowLayer.shadowOffset = CGSize(width: shadowIntense, height: shadowIntense)
++        case .All:
++            shadowLayer.shadowOffset = CGSize.zero
++        }
++        //shadowLayer.shadowPath = UIBezierPath(roundedRect: layer.bounds, cornerRadius: 4.0).cgPath
++        
++        shadowLayer.shouldRasterize = true
++        shadowLayer.rasterizationScale = UIScreen.main.scale
++    }
++    
++    func addDefaultShadow(withPath: Bool = true, opacity: Float = 0.2, offset: CGSize = CGSize(width: 0, height: 1)) {
++        
++        self.layer.masksToBounds = false
++        
++        // shadow
++        self.layer.shadowColor = UIColor.black.cgColor
++        self.layer.shadowOffset = offset
++        self.layer.shadowOpacity = opacity
++        self.layer.shadowRadius = 2.0
++        if withPath {
++            self.layer.shadowPath = UIBezierPath(roundedRect: layer.bounds, cornerRadius: self.layer.cornerRadius == 0 ? 4.0 : self.layer.cornerRadius).cgPath
++        }
++        self.layer.shouldRasterize = true
++        self.layer.rasterizationScale = UIScreen.main.scale
++    }
++    
+     func removeGradientLayer() {
+         let allLayers = self.layer.sublayers ?? []
+         for layer in allLayers where layer.name == GRADIENT_LAYER_NAME {

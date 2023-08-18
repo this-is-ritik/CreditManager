@@ -1,0 +1,10 @@
+diff a/CreditManager/Screens/AppManager/Utilities/Constants.swift b/CreditManager/Screens/AppManager/Utilities/Constants.swift	(rejected hunks)
+@@ -9,6 +9,8 @@ import Foundation
+ 
+ class Constants {
+     public static let homeDataKey: String = "HomeData"
++    public static let rewardsDataKey: String = "RewardData"
++    
+ }
+ 
+ public enum VCTemplate: String, Codable {

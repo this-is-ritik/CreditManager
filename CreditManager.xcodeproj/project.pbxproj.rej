@@ -1,0 +1,182 @@
+diff a/CreditManager.xcodeproj/project.pbxproj b/CreditManager.xcodeproj/project.pbxproj	(rejected hunks)
+@@ -7,6 +7,22 @@
+ 	objects = {
+ 
+ /* Begin PBXBuildFile section */
++		CD0FE3FA2A8E4DFE00A7AD7E /* RewardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FE3F92A8E4DFE00A7AD7E /* RewardsModel.swift */; };
++		CD0FE3FC2A8E4E0D00A7AD7E /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FE3FB2A8E4E0D00A7AD7E /* RewardsViewModel.swift */; };
++		CD0FE3FF2A8E4E7600A7AD7E /* RewardsCardTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FE3FE2A8E4E7600A7AD7E /* RewardsCardTemplates.swift */; };
++		CDC3899B2A8E451000248DAC /* ExploreVoucherCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC3899A2A8E451000248DAC /* ExploreVoucherCVC.xib */; };
++		CDC3899D2A8E454F00248DAC /* ExploreVoucherCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3899C2A8E454F00248DAC /* ExploreVoucherCVC.swift */; };
++		CDEE568A2A8F3BDD0032DC35 /* ExploreVoucherTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEE56892A8F3BDD0032DC35 /* ExploreVoucherTVC.xib */; };
++		CDEE568C2A8F3D7B0032DC35 /* ExploreVoucherTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE568B2A8F3D7B0032DC35 /* ExploreVoucherTVC.swift */; };
++		CDEE56902A8F3F530032DC35 /* ExploreVoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE568F2A8F3F530032DC35 /* ExploreVoucherModel.swift */; };
++		CDEE56922A8F6C150032DC35 /* DealsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEE56912A8F6C150032DC35 /* DealsTVC.xib */; };
++		CDEE56942A8F6C400032DC35 /* DealsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE56932A8F6C400032DC35 /* DealsTVC.swift */; };
++		CDEE56962A8F6D200032DC35 /* FeaturedDealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE56952A8F6D200032DC35 /* FeaturedDealsModel.swift */; };
++		CDEE56982A8F70190032DC35 /* DealsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE56972A8F70190032DC35 /* DealsCVC.swift */; };
++		CDEE569A2A8F70240032DC35 /* DealsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEE56992A8F70240032DC35 /* DealsCVC.xib */; };
++		CDEE569C2A8F9E170032DC35 /* CashTransferTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEE569B2A8F9E170032DC35 /* CashTransferTVC.xib */; };
++		CDEE569E2A8F9E3D0032DC35 /* CashTransferTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE569D2A8F9E3D0032DC35 /* CashTransferTVC.swift */; };
++		CDEE56A02A8FA1960032DC35 /* CashTransferTVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE569F2A8FA1960032DC35 /* CashTransferTVCModel.swift */; };
+ 		F80DC9EC2A8BB3C9007A3B64 /* ImageStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC9EB2A8BB3C9007A3B64 /* ImageStorageManager.swift */; };
+ 		F845DDC32A8AD91500F8A7E5 /* AmountDueCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DDC22A8AD91500F8A7E5 /* AmountDueCard.xib */; };
+ 		F845DDC72A8AD95100F8A7E5 /* AmountDueCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDC62A8AD95100F8A7E5 /* AmountDueCardTVC.swift */; };
+@@ -62,6 +78,22 @@
+ /* End PBXContainerItemProxy section */
+ 
+ /* Begin PBXFileReference section */
++		CD0FE3F92A8E4DFE00A7AD7E /* RewardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsModel.swift; sourceTree = "<group>"; };
++		CD0FE3FB2A8E4E0D00A7AD7E /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
++		CD0FE3FE2A8E4E7600A7AD7E /* RewardsCardTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsCardTemplates.swift; sourceTree = "<group>"; };
++		CDC3899A2A8E451000248DAC /* ExploreVoucherCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreVoucherCVC.xib; sourceTree = "<group>"; };
++		CDC3899C2A8E454F00248DAC /* ExploreVoucherCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVoucherCVC.swift; sourceTree = "<group>"; };
++		CDEE56892A8F3BDD0032DC35 /* ExploreVoucherTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreVoucherTVC.xib; sourceTree = "<group>"; };
++		CDEE568B2A8F3D7B0032DC35 /* ExploreVoucherTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVoucherTVC.swift; sourceTree = "<group>"; };
++		CDEE568F2A8F3F530032DC35 /* ExploreVoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVoucherModel.swift; sourceTree = "<group>"; };
++		CDEE56912A8F6C150032DC35 /* DealsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsTVC.xib; sourceTree = "<group>"; };
++		CDEE56932A8F6C400032DC35 /* DealsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTVC.swift; sourceTree = "<group>"; };
++		CDEE56952A8F6D200032DC35 /* FeaturedDealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDealsModel.swift; sourceTree = "<group>"; };
++		CDEE56972A8F70190032DC35 /* DealsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCVC.swift; sourceTree = "<group>"; };
++		CDEE56992A8F70240032DC35 /* DealsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsCVC.xib; sourceTree = "<group>"; };
++		CDEE569B2A8F9E170032DC35 /* CashTransferTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CashTransferTVC.xib; sourceTree = "<group>"; };
++		CDEE569D2A8F9E3D0032DC35 /* CashTransferTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTransferTVC.swift; sourceTree = "<group>"; };
++		CDEE569F2A8FA1960032DC35 /* CashTransferTVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTransferTVCModel.swift; sourceTree = "<group>"; };
+ 		F80DC9EB2A8BB3C9007A3B64 /* ImageStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorageManager.swift; sourceTree = "<group>"; };
+ 		F845DDC22A8AD91500F8A7E5 /* AmountDueCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountDueCard.xib; sourceTree = "<group>"; };
+ 		F845DDC62A8AD95100F8A7E5 /* AmountDueCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountDueCardTVC.swift; sourceTree = "<group>"; };
+@@ -128,6 +160,30 @@
+ /* End PBXFrameworksBuildPhase section */
+ 
+ /* Begin PBXGroup section */
++		CD0FE3F72A8E4DE900A7AD7E /* Model */ = {
++			isa = PBXGroup;
++			children = (
++				CD0FE3F92A8E4DFE00A7AD7E /* RewardsModel.swift */,
++			);
++			path = Model;
++			sourceTree = "<group>";
++		};
++		CD0FE3F82A8E4DED00A7AD7E /* ViewModel */ = {
++			isa = PBXGroup;
++			children = (
++				CD0FE3FB2A8E4E0D00A7AD7E /* RewardsViewModel.swift */,
++			);
++			path = ViewModel;
++			sourceTree = "<group>";
++		};
++		CD0FE3FD2A8E4E6400A7AD7E /* CardTemplates */ = {
++			isa = PBXGroup;
++			children = (
++				CD0FE3FE2A8E4E7600A7AD7E /* RewardsCardTemplates.swift */,
++			);
++			path = CardTemplates;
++			sourceTree = "<group>";
++		};
+ 		F845DDBF2A8AD87B00F8A7E5 /* Cards */ = {
+ 			isa = PBXGroup;
+ 			children = (
+@@ -145,6 +201,11 @@
+ 				F845DDC82A8ADA6B00F8A7E5 /* BankDueCard.xib */,
+ 				F845DDCC2A8ADE8A00F8A7E5 /* CreditScoreCard.xib */,
+ 				F845DDD02A8AE25200F8A7E5 /* LinkPersuasionCard.xib */,
++				CDC3899A2A8E451000248DAC /* ExploreVoucherCVC.xib */,
++				CDEE56892A8F3BDD0032DC35 /* ExploreVoucherTVC.xib */,
++				CDEE56912A8F6C150032DC35 /* DealsTVC.xib */,
++				CDEE56992A8F70240032DC35 /* DealsCVC.xib */,
++				CDEE569B2A8F9E170032DC35 /* CashTransferTVC.xib */,
+ 			);
+ 			path = Views;
+ 			sourceTree = "<group>";
+@@ -156,6 +217,11 @@
+ 				F845DDCA2A8ADA8500F8A7E5 /* BankDueCardTVC.swift */,
+ 				F845DDCE2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift */,
+ 				F845DDD22A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift */,
++				CDC3899C2A8E454F00248DAC /* ExploreVoucherCVC.swift */,
++				CDEE568B2A8F3D7B0032DC35 /* ExploreVoucherTVC.swift */,
++				CDEE56932A8F6C400032DC35 /* DealsTVC.swift */,
++				CDEE56972A8F70190032DC35 /* DealsCVC.swift */,
++				CDEE569D2A8F9E3D0032DC35 /* CashTransferTVC.swift */,
+ 			);
+ 			path = Source;
+ 			sourceTree = "<group>";
+@@ -183,6 +249,9 @@
+ 				F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */,
+ 				F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */,
+ 				F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */,
++				CDEE568F2A8F3F530032DC35 /* ExploreVoucherModel.swift */,
++				CDEE56952A8F6D200032DC35 /* FeaturedDealsModel.swift */,
++				CDEE569F2A8FA1960032DC35 /* CashTransferTVCModel.swift */,
+ 			);
+ 			path = Model;
+ 			sourceTree = "<group>";
+@@ -264,6 +333,9 @@
+ 		F8D1349C2A88D22B00382005 /* Rewards */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				CD0FE3FD2A8E4E6400A7AD7E /* CardTemplates */,
++				CD0FE3F82A8E4DED00A7AD7E /* ViewModel */,
++				CD0FE3F72A8E4DE900A7AD7E /* Model */,
+ 				F8D134A02A88D26000382005 /* View */,
+ 			);
+ 			path = Rewards;
+@@ -472,10 +544,15 @@
+ 				F8D134BF2A89140300382005 /* ProfileNavBarView.xib in Resources */,
+ 				F845DDD12A8AE25200F8A7E5 /* LinkPersuasionCard.xib in Resources */,
+ 				F845DDC92A8ADA6B00F8A7E5 /* BankDueCard.xib in Resources */,
++				CDEE56922A8F6C150032DC35 /* DealsTVC.xib in Resources */,
+ 				F8D134772A88D1D600382005 /* LaunchScreen.storyboard in Resources */,
+ 				F845DDC32A8AD91500F8A7E5 /* AmountDueCard.xib in Resources */,
++				CDEE568A2A8F3BDD0032DC35 /* ExploreVoucherTVC.xib in Resources */,
++				CDEE569A2A8F70240032DC35 /* DealsCVC.xib in Resources */,
++				CDC3899B2A8E451000248DAC /* ExploreVoucherCVC.xib in Resources */,
+ 				F8D134742A88D1D600382005 /* Assets.xcassets in Resources */,
+ 				F845DDCD2A8ADE8A00F8A7E5 /* CreditScoreCard.xib in Resources */,
++				CDEE569C2A8F9E170032DC35 /* CashTransferTVC.xib in Resources */,
+ 				F8D134C32A8923F300382005 /* WalletNavBarView.xib in Resources */,
+ 				F8D134722A88D1D500382005 /* Main.storyboard in Resources */,
+ 			);
+@@ -502,16 +579,27 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
++				CD0FE3FC2A8E4E0D00A7AD7E /* RewardsViewModel.swift in Sources */,
+ 				F845DDD62A8AE65900F8A7E5 /* HomeViewModel.swift in Sources */,
++				CDC3899D2A8E454F00248DAC /* ExploreVoucherCVC.swift in Sources */,
+ 				F8D134B62A88FB9800382005 /* HomeDataManager.swift in Sources */,
+ 				F8D134A22A88D26A00382005 /* RewardsViewController.swift in Sources */,
+ 				F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */,
++				CDEE569E2A8F9E3D0032DC35 /* CashTransferTVC.swift in Sources */,
++				CD0FE3FF2A8E4E7600A7AD7E /* RewardsCardTemplates.swift in Sources */,
++				CDEE56942A8F6C400032DC35 /* DealsTVC.swift in Sources */,
++				CDEE56A02A8FA1960032DC35 /* CashTransferTVCModel.swift in Sources */,
+ 				F8D134C12A89145100382005 /* ProfileNavBarView.swift in Sources */,
+ 				F845DDD32A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift in Sources */,
++				CDEE56962A8F6D200032DC35 /* FeaturedDealsModel.swift in Sources */,
+ 				F845DDD92A8AE7E000F8A7E5 /* CardTemplateIds.swift in Sources */,
++				CD0FE3FA2A8E4DFE00A7AD7E /* RewardsModel.swift in Sources */,
+ 				F8D134A92A88D35400382005 /* HomeData.swift in Sources */,
++				CDEE56982A8F70190032DC35 /* DealsCVC.swift in Sources */,
++				CDEE56902A8F3F530032DC35 /* ExploreVoucherModel.swift in Sources */,
+ 				F8D134B42A88F22A00382005 /* DownloadUtility.swift in Sources */,
+ 				F845DDC72A8AD95100F8A7E5 /* AmountDueCardTVC.swift in Sources */,
++				CDEE568C2A8F3D7B0032DC35 /* ExploreVoucherTVC.swift in Sources */,
+ 				F8D134B22A88E5B600382005 /* PayViewController.swift in Sources */,
+ 				F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */,
+ 				F845DDCF2A8AE19900F8A7E5 /* CreditScoreCardTVC.swift in Sources */,
+@@ -709,6 +797,7 @@
+ 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+@@ -737,6 +826,7 @@
+ 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",

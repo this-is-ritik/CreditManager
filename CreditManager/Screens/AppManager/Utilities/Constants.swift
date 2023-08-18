@@ -9,6 +9,8 @@ import Foundation
 
 class Constants {
     public static let homeDataKey: String = "HomeData"
+    public static let rewardsDataKey: String = "RewardData"
+    
 }
 
 public enum VCTemplate: String, Codable {
