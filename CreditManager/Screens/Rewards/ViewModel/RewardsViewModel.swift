@@ -56,6 +56,10 @@ class RewardsViewModel: NSObject {
                 return try? decoder.decode(FeaturedTVCModel.self, from: data)
             case .transferCash:
                 return try? decoder.decode(CashTransferTVCModel.self, from: data)
+            case .walletBalance:
+                return try? decoder.decode(MyWalletTVCModel.self, from: data)
+            case .wallet:
+                return try? decoder.decode(MyWalletTVCModel.self, from: data)
             default: return nil
             }
         }

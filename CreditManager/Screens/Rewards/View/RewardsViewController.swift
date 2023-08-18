@@ -13,12 +13,13 @@ class RewardsViewController: UIViewController, RewardsViewProtocol {
     let viewModel: RewardsViewModel = RewardsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "REWARDS"
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: ExploreVoucherTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: ExploreVoucherTVC.reuseIdentifier)
         self.tableView.register(UINib(nibName: DealsTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: DealsTVC.reuseIdentifier)
         self.tableView.register(UINib(nibName: CashTransferTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: CashTransferTVC.reuseIdentifier)
+        self.tableView.register(UINib(nibName: MyWalletTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: MyWalletTVC.reuseIdentifier)
+        
         self.viewModel.delegate = self
         self.viewModel.fetchDataFromApi()
         
@@ -30,9 +31,21 @@ class RewardsViewController: UIViewController, RewardsViewProtocol {
         return vc
     }
     func reloadRewardsData() {
+        self.updateNavBar()
         self.tableView.reloadData()
     }
     
+    func updateNavBar() {
+        let leftBtn = UIBarButtonItem(title: self.viewModel.model?.title, style: .plain, target: nil, action: nil)
+        leftBtn.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .semibold)], for: .normal)
+        leftBtn.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .semibold)], for: .highlighted)
+        self.navigationItem.leftBarButtonItem = leftBtn
+        if let urlStr = self.viewModel.model?.img, let url = URL(string: urlStr) {
+            ImageDownloader.shared.downloadImage(withURL: url, completion: { image in
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+            })
+        }
+    }
 }
 
 
@@ -42,7 +55,16 @@ extension RewardsViewController: UITableViewDelegate, UITableViewDataSource {
         case .deals, .otherDeals: return 380
         case .voucher: return 120
         case .transferCash: return 120
+        case .walletBalance: return 80
         default: return .zero
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch self.viewModel.model?.sequenceData?[section] {
+        case .exploreCVC:
+            return (self.viewModel.cardData(for: .exploreCVC) as? ExploreVoucherTVCModel)?.header
+        default: return nil
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,6 +94,11 @@ extension RewardsViewController: UITableViewDelegate, UITableViewDataSource {
         case .transferCash:
             if let cell = tableView.dequeueReusableCell(withIdentifier: CashTransferTVC.reuseIdentifier, for: indexPath) as? CashTransferTVC {
                 cell.configure(with: self.viewModel.cardData(for: .transferCash) as? CashTransferTVCModel)
+                return cell
+            }
+        case .walletBalance:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: MyWalletTVC.reuseIdentifier, for: indexPath) as? MyWalletTVC {
+                cell.configure(with: self.viewModel.cardData(for: .walletBalance) as? MyWalletTVCModel)
                 return cell
             }
         default: return UITableViewCell()

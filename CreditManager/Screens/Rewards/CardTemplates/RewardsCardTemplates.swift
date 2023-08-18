@@ -14,4 +14,6 @@ enum RewardsCardTemplates: String, Codable {
     case deals = "FEATURED_DEALS"
     case otherDeals = "OTHER_FEATURED_DEALS"
     case exploreCVC = "EXPLORE_VOUCHER_CVC"
+    case wallet = "WALLET"
+    case voucherNest = "VOUCHER_NEST"
 }

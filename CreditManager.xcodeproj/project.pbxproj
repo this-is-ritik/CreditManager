@@ -38,6 +38,11 @@
 		F845DDDE2A8AEA8300F8A7E5 /* BankDueCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */; };
 		F845DDE02A8AEAA100F8A7E5 /* CreditScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */; };
 		F845DDE22A8AEAE300F8A7E5 /* LinkPersuasionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */; };
+		F8D0C85D2A8FB7B700118EBD /* MyWalletTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D0C85C2A8FB7B700118EBD /* MyWalletTVC.xib */; };
+		F8D0C85F2A8FB7CC00118EBD /* MyWalletTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C85E2A8FB7CC00118EBD /* MyWalletTVC.swift */; };
+		F8D0C8612A8FB86B00118EBD /* MyWalletCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C8602A8FB86B00118EBD /* MyWalletCVC.swift */; };
+		F8D0C8632A8FB87700118EBD /* MyWalletCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D0C8622A8FB87700118EBD /* MyWalletCVC.xib */; };
+		F8D0C8652A8FB9B700118EBD /* MyWalletCVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C8642A8FB9B700118EBD /* MyWalletCVCModel.swift */; };
 		F8D1346B2A88D1D500382005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346A2A88D1D500382005 /* AppDelegate.swift */; };
 		F8D1346D2A88D1D500382005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1346C2A88D1D500382005 /* SceneDelegate.swift */; };
 		F8D134722A88D1D500382005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D134702A88D1D500382005 /* Main.storyboard */; };
@@ -109,6 +114,11 @@
 		F845DDDD2A8AEA8300F8A7E5 /* BankDueCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDueCardModel.swift; sourceTree = "<group>"; };
 		F845DDDF2A8AEAA100F8A7E5 /* CreditScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModel.swift; sourceTree = "<group>"; };
 		F845DDE12A8AEAE300F8A7E5 /* LinkPersuasionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPersuasionModel.swift; sourceTree = "<group>"; };
+		F8D0C85C2A8FB7B700118EBD /* MyWalletTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWalletTVC.xib; sourceTree = "<group>"; };
+		F8D0C85E2A8FB7CC00118EBD /* MyWalletTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletTVC.swift; sourceTree = "<group>"; };
+		F8D0C8602A8FB86B00118EBD /* MyWalletCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletCVC.swift; sourceTree = "<group>"; };
+		F8D0C8622A8FB87700118EBD /* MyWalletCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWalletCVC.xib; sourceTree = "<group>"; };
+		F8D0C8642A8FB9B700118EBD /* MyWalletCVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletCVCModel.swift; sourceTree = "<group>"; };
 		F8D134672A88D1D500382005 /* CreditManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1346A2A88D1D500382005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D1346C2A88D1D500382005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +216,8 @@
 				CDEE56912A8F6C150032DC35 /* DealsTVC.xib */,
 				CDEE56992A8F70240032DC35 /* DealsCVC.xib */,
 				CDEE569B2A8F9E170032DC35 /* CashTransferTVC.xib */,
+				F8D0C85C2A8FB7B700118EBD /* MyWalletTVC.xib */,
+				F8D0C8622A8FB87700118EBD /* MyWalletCVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +234,8 @@
 				CDEE56932A8F6C400032DC35 /* DealsTVC.swift */,
 				CDEE56972A8F70190032DC35 /* DealsCVC.swift */,
 				CDEE569D2A8F9E3D0032DC35 /* CashTransferTVC.swift */,
+				F8D0C85E2A8FB7CC00118EBD /* MyWalletTVC.swift */,
+				F8D0C8602A8FB86B00118EBD /* MyWalletCVC.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -252,6 +266,7 @@
 				CDEE568F2A8F3F530032DC35 /* ExploreVoucherModel.swift */,
 				CDEE56952A8F6D200032DC35 /* FeaturedDealsModel.swift */,
 				CDEE569F2A8FA1960032DC35 /* CashTransferTVCModel.swift */,
+				F8D0C8642A8FB9B700118EBD /* MyWalletCVCModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -543,6 +558,7 @@
 			files = (
 				F8D134BF2A89140300382005 /* ProfileNavBarView.xib in Resources */,
 				F845DDD12A8AE25200F8A7E5 /* LinkPersuasionCard.xib in Resources */,
+				F8D0C85D2A8FB7B700118EBD /* MyWalletTVC.xib in Resources */,
 				F845DDC92A8ADA6B00F8A7E5 /* BankDueCard.xib in Resources */,
 				CDEE56922A8F6C150032DC35 /* DealsTVC.xib in Resources */,
 				F8D134772A88D1D600382005 /* LaunchScreen.storyboard in Resources */,
@@ -551,6 +567,7 @@
 				CDEE569A2A8F70240032DC35 /* DealsCVC.xib in Resources */,
 				CDC3899B2A8E451000248DAC /* ExploreVoucherCVC.xib in Resources */,
 				F8D134742A88D1D600382005 /* Assets.xcassets in Resources */,
+				F8D0C8632A8FB87700118EBD /* MyWalletCVC.xib in Resources */,
 				F845DDCD2A8ADE8A00F8A7E5 /* CreditScoreCard.xib in Resources */,
 				CDEE569C2A8F9E170032DC35 /* CashTransferTVC.xib in Resources */,
 				F8D134C32A8923F300382005 /* WalletNavBarView.xib in Resources */,
@@ -588,12 +605,14 @@
 				CDEE569E2A8F9E3D0032DC35 /* CashTransferTVC.swift in Sources */,
 				CD0FE3FF2A8E4E7600A7AD7E /* RewardsCardTemplates.swift in Sources */,
 				CDEE56942A8F6C400032DC35 /* DealsTVC.swift in Sources */,
+				F8D0C8652A8FB9B700118EBD /* MyWalletCVCModel.swift in Sources */,
 				CDEE56A02A8FA1960032DC35 /* CashTransferTVCModel.swift in Sources */,
 				F8D134C12A89145100382005 /* ProfileNavBarView.swift in Sources */,
 				F845DDD32A8AE3E600F8A7E5 /* LinkPersuasionCardTVC.swift in Sources */,
 				CDEE56962A8F6D200032DC35 /* FeaturedDealsModel.swift in Sources */,
 				F845DDD92A8AE7E000F8A7E5 /* CardTemplateIds.swift in Sources */,
 				CD0FE3FA2A8E4DFE00A7AD7E /* RewardsModel.swift in Sources */,
+				F8D0C8612A8FB86B00118EBD /* MyWalletCVC.swift in Sources */,
 				F8D134A92A88D35400382005 /* HomeData.swift in Sources */,
 				CDEE56982A8F70190032DC35 /* DealsCVC.swift in Sources */,
 				CDEE56902A8F3F530032DC35 /* ExploreVoucherModel.swift in Sources */,
@@ -611,6 +630,7 @@
 				F845DDE22A8AEAE300F8A7E5 /* LinkPersuasionModel.swift in Sources */,
 				F80DC9EC2A8BB3C9007A3B64 /* ImageStorageManager.swift in Sources */,
 				F845DDDC2A8AEA4C00F8A7E5 /* AmountDueCardModel.swift in Sources */,
+				F8D0C85F2A8FB7CC00118EBD /* MyWalletTVC.swift in Sources */,
 				F845DDDE2A8AEA8300F8A7E5 /* BankDueCardModel.swift in Sources */,
 				F8D134C52A89242E00382005 /* WalletNavBarView.swift in Sources */,
 			);

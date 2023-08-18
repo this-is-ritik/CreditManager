@@ -15,6 +15,8 @@ class RewardsBaseData: Codable, RewardsModelProtocol {
     var template: RewardsCardTemplates? = nil
 }
 class RewardsModel: Codable {
+    var title: String?
+    var img: String?
     var sequenceData: [RewardsCardTemplates]? = nil
     var data: JsonCodableValue? = nil
 }

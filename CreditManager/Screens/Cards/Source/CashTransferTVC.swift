@@ -23,7 +23,7 @@ class CashTransferTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.arrowView.layer.cornerRadius = 16
+        self.arrowView.layer.cornerRadius = 4
         self.rightCta.tintColor = UIColor(hex: "#6E7170")
         self.rightCta.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .medium)
         self.headerLbkl.font = UIFont.systemFont(ofSize: 16, weight: .medium)

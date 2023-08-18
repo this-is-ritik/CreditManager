@@ -40,7 +40,6 @@ class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
                     
                     // create a tabbar item for that vc
                     let item = UITabBarItem(title: screen.title, image: UIImage(named: screen.img ?? "HOME", in: .main, with: nil)?.withRenderingMode(.alwaysOriginal), tag: index)
-                    print(screen.selectedImg)
                     item.selectedImage = UIImage(named: (screen.selectedImg ?? "Rewards_selected"), in: .main, with: nil)?.withRenderingMode(.alwaysOriginal)
                     
                     vc.tabBarItem = item
