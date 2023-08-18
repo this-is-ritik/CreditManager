@@ -21,7 +21,6 @@ class AmountDueCardTVC: UITableViewCell {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.bgView.layer.borderWidth = 1
-//        self.bottomBgView.layer.borderWidth = 1
         self.contentView.layer.borderWidth = 1
         self.contentView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
         self.bgView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
@@ -38,7 +37,7 @@ class AmountDueCardTVC: UITableViewCell {
         self.bottomCta.setAttributedTitle(NSAttributedString(string: model?.sectionData?.ctaText ?? "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .medium), NSAttributedString.Key.foregroundColor: UIColor(hex: model?.sectionData?.textColor)]), for: .normal)
         
         self.bottomCta.layer.cornerRadius = 16
-        self.bottomCta.backgroundColor = UIColor(hex: model?.sectionData?.bgColor)
+        self.bottomCta.tintColor = UIColor(hex: model?.sectionData?.bgColor)
         self.bottomCta.addGradientColorWithCornerRadius(withColors: [UIColor(hex: model?.sectionData?.bgColor)], withType: .linear(startPoint: .zero, endPoint: .init(x: 1.0, y: 1.0)))
         if let urlStr = model?.sectionData?.ctaImg, let url = URL(string: urlStr) {
             ImageDownloader.shared.downloadImage(withURL: url, completion: { image in

@@ -80,7 +80,7 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch self.viewModel.sequenceData()?[indexPath.section].template {
         case .amountDue:
-            return 250
+            return 320
         default:
             return UITableView.automaticDimension
         }
