@@ -20,6 +20,7 @@ class RewardsViewController: UIViewController, RewardsViewProtocol {
         self.tableView.register(UINib(nibName: CashTransferTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: CashTransferTVC.reuseIdentifier)
         self.tableView.register(UINib(nibName: MyWalletTVC.reuseIdentifier, bundle: .main), forCellReuseIdentifier: MyWalletTVC.reuseIdentifier)
         
+        self.tableView.sectionHeaderHeight = 20
         self.viewModel.delegate = self
         self.viewModel.fetchDataFromApi()
         
@@ -59,14 +60,42 @@ extension RewardsViewController: UITableViewDelegate, UITableViewDataSource {
         default: return .zero
         }
     }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch self.viewModel.model?.sequenceData?[section] {
-        case .exploreCVC:
-            return (self.viewModel.cardData(for: .exploreCVC) as? ExploreVoucherTVCModel)?.header
-        default: return nil
+        case .voucher: return 40
+        default: return 20
         }
     }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.white // Set your desired background color
+        
+        let titleLabel = UILabel()
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
+        titleLabel.textColor = UIColor(hex: "#6E7170")
+        switch self.viewModel.model?.sequenceData?[section] {
+        case .voucher:
+            if let exploreVoucherModel = self.viewModel.cardData(for: .voucher) as? ExploreVoucherTVCModel {
+                titleLabel.text = exploreVoucherModel.header
+            }
+        default:
+            titleLabel.text = nil
+        }
+        
+        headerView.addSubview(titleLabel)
+        
+        // Add constraints to position titleLabel within headerView
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 24),
+            titleLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 0),
+            titleLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 0),
+            titleLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 0)
+        ])
+        
+        return headerView
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         self.viewModel.noOfSection()
     }

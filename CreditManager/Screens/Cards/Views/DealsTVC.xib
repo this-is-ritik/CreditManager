@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="281"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17L-YP-PwM">
-                                <rect key="frame" x="24" y="18" width="42" height="21"/>
+                                <rect key="frame" x="24" y="18" width="42" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DtE-LF-fO3">
-                                <rect key="frame" x="24" y="60" width="369" height="211"/>
+                                <rect key="frame" x="24" y="55" width="369" height="216"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LA3-Qh-RbW">
                                     <size key="itemSize" width="150" height="150"/>
@@ -62,9 +62,10 @@
                             <constraint firstItem="17L-YP-PwM" firstAttribute="leading" secondItem="4Wj-2F-xbN" secondAttribute="leading" constant="24" id="DmI-UH-jg2"/>
                             <constraint firstItem="DtE-LF-fO3" firstAttribute="leading" secondItem="4Wj-2F-xbN" secondAttribute="leading" constant="24" id="FZ2-d9-U9h"/>
                             <constraint firstItem="17L-YP-PwM" firstAttribute="top" secondItem="4Wj-2F-xbN" secondAttribute="top" constant="18" id="GYu-oZ-be9"/>
+                            <constraint firstItem="17L-YP-PwM" firstAttribute="centerY" secondItem="wvm-Vk-Nej" secondAttribute="centerY" id="SUA-Da-NPY"/>
                             <constraint firstAttribute="bottom" secondItem="DtE-LF-fO3" secondAttribute="bottom" constant="10" id="Xjz-kn-WNr"/>
                             <constraint firstItem="wvm-Vk-Nej" firstAttribute="top" secondItem="4Wj-2F-xbN" secondAttribute="top" constant="10" id="arC-HI-dUo"/>
-                            <constraint firstItem="DtE-LF-fO3" firstAttribute="top" secondItem="wvm-Vk-Nej" secondAttribute="bottom" constant="10" id="cCE-yB-XGY"/>
+                            <constraint firstItem="DtE-LF-fO3" firstAttribute="top" secondItem="wvm-Vk-Nej" secondAttribute="bottom" constant="5" id="cCE-yB-XGY"/>
                             <constraint firstAttribute="trailing" secondItem="DtE-LF-fO3" secondAttribute="trailing" id="rLR-Ql-mEt"/>
                         </constraints>
                     </view>

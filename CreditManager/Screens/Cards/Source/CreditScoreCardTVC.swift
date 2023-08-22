@@ -17,6 +17,9 @@ class CreditScoreCardTVC: UITableViewCell {
     @IBOutlet weak var feedbackLbl: UILabel!
     
     @IBOutlet weak var maxScoreLbl: UILabel!
+    
+    @IBOutlet weak var mainView: UIView!
+    
     static let reuseIdentifier: String = "CreditScoreCardTVC"
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,9 +31,9 @@ class CreditScoreCardTVC: UITableViewCell {
         self.creditScoreLbl.textColor = .black
         self.maxScoreLbl.textColor = UIColor(hex: "#CACFCF")
         self.byLbl.textColor = UIColor(hex: "#CACFCF")
-        self.contentView.layer.borderWidth = 1
-        self.contentView.layer.borderColor = UIColor(hex: "#E6EAE9").cgColor
-        self.contentView.layer.cornerRadius = 16
+        self.mainView.layer.borderWidth = 1
+        self.mainView.layer.borderColor = UIColor(hex: "#E6EAE9").cgColor
+        self.mainView.layer.cornerRadius = 16
         
     }
 

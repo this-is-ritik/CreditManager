@@ -82,4 +82,22 @@ class DealsCVC: UICollectionViewCell {
         
         self.textLbl.text = model?.text
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let rect = self.imgBgView.bounds
+        let y = rect.size.height - 10
+        let curveTo = rect.size.height + 10
+
+        let myBez = UIBezierPath()
+        myBez.move(to: CGPoint(x: 0.0, y: y))
+        myBez.addQuadCurve(to: CGPoint(x: rect.size.width, y: y), controlPoint: CGPoint(x: rect.size.width / 2.0, y: curveTo))
+        myBez.addLine(to: CGPoint(x: rect.size.width, y: 0.0))
+        myBez.addLine(to: CGPoint(x: 0.0, y: 0.0))
+        myBez.close()
+
+        let maskForPath = CAShapeLayer()
+        maskForPath.path = myBez.cgPath
+        self.imgBgView.layer.mask = maskForPath
+    }
 }

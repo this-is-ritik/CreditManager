@@ -21,12 +21,11 @@ class AmountDueCardTVC: UITableViewCell {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.bgView.layer.borderWidth = 1
-        self.contentView.layer.borderWidth = 1
-        self.contentView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
+        self.bottomBgView.layer.borderWidth = 1
+        self.bottomBgView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
         self.bgView.layer.borderColor = UIColor(red: 0.416, green: 0.451, blue: 0.506, alpha: 0.12).cgColor
         self.bgView.layer.cornerRadius = 16
         self.bottomBgView.layer.cornerRadius = 16
-        self.contentView.layer.cornerRadius = 16
         
         self.tableView.estimatedRowHeight = 100
         self.tableView.rowHeight = UITableView.automaticDimension
@@ -50,15 +49,16 @@ class AmountDueCardTVC: UITableViewCell {
         }
         
     }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.contentView.addGradientColorWithCornerRadius(withColors: [UIColor(hex: "#FAF8F8"), UIColor(hex: "#FFE3E3")], withType: .linear(startPoint: .init(x: 0.5, y: 0), endPoint: .init(x: 0.5, y: 1.0)))
     }
 }
 
 
 extension AmountDueCardTVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 60))
+        let view = UIView()
         view.backgroundColor = .white
         let labelLeft = UILabel()
         labelLeft.text = model?.sectionData?.headerText
@@ -97,7 +97,9 @@ extension AmountDueCardTVC: UITableViewDelegate, UITableViewDataSource {
         
         return view
     }
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }

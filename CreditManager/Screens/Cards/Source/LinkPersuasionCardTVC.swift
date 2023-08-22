@@ -14,19 +14,21 @@ class LinkPersuasionCardTVC: UITableViewCell {
     @IBOutlet weak var headerLbl: UILabel!
     @IBOutlet weak var subheaderLbl: UILabel!
     
+    @IBOutlet weak var mainView: UIView!
     static let reuseIdentifier: String = "LinkPersuasionCardTVC"
     private var model: LinkPersuasionModel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.contentView.backgroundColor = .clear
+        self.contentView.backgroundColor = .white
         self.headerLbl.textColor = .black
         self.headerLbl.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        self.mainView.layer.masksToBounds = true
         self.subheaderLbl.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         self.subheaderLbl.textColor = UIColor(hex: "#131414")
-        self.contentView.layer.borderWidth = 1
-        self.contentView.layer.borderColor = UIColor(hex: "#E6EAE9").cgColor
-        self.contentView.layer.cornerRadius = 16
+        self.mainView.layer.borderWidth = 1
+        self.mainView.layer.borderColor = UIColor(hex: "#E6EAE9").cgColor
+        self.mainView.layer.cornerRadius = 16
     }
 
     func configure(with model: LinkPersuasionModel?) {
@@ -44,10 +46,7 @@ class LinkPersuasionCardTVC: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         let colors: [UIColor] = model?.cardData?.bgColors?.compactMap { UIColor(hex: $0)} ?? []
-        self.contentView.addGradientColorWithCornerRadius(withColors: colors, withType: .radial(center: CGPoint(x: self.contentView.frame.midX, y: self.contentView.frame.midY), radius: self.contentView.frame.width), cornerRadius: 16)
-    }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        self.mainView.addGradientColorWithCornerRadius(withColors: colors, withType: .radial(center: .init(x: 0.5, y: 0.5), radius: self.mainView.bounds.width), cornerRadius: 16)
     }
 
 }

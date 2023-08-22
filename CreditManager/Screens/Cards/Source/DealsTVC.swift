@@ -31,6 +31,7 @@ class DealsTVC: UITableViewCell {
         self.collectionView.register(UINib(nibName: DealsCVC.reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: DealsCVC.reuseIdentifier)
         self.rightCtaView.layer.cornerRadius = 13
         self.rightCta.backgroundColor = .white
+        self.contentView.backgroundColor = UIColor(hex: "#FFEEB2")
         self.rightCtaView.backgroundColor = UIColor(red: 0.894, green: 0.737, blue: 0.2, alpha: 1)
         self.rightCta.layer.cornerRadius = 13
         self.rightCta.tintColor = UIColor(hex: "#49505A")
@@ -55,7 +56,8 @@ class DealsTVC: UITableViewCell {
             })
         }
         if let hex = model?.bgColor {
-            self.bgView.backgroundColor = UIColor(hex: hex, alpha: 0.3)
+            self.bgView.backgroundColor = UIColor(hex: hex)
+            self.contentView.backgroundColor = .clear
         } else {
             self.bgView.backgroundColor = .clear
         }

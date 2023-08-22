@@ -81,6 +81,8 @@ extension HomeViewController: UITableViewDelegate {
         switch self.viewModel.sequenceData()?[indexPath.section].template {
         case .amountDue:
             return 320
+        case .creditScore:
+            return 70
         default:
             return UITableView.automaticDimension
         }
@@ -89,14 +91,42 @@ extension HomeViewController: UITableViewDelegate {
 
 
 extension HomeViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch self.viewModel.sequenceData()?[section].template {
+        case .creditScore: return 40
+        case .linkPersuasionCard: return 40
+        case .amountDue: return 0
+        default: return 20
+        }
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.white // Set your desired background color
+        
+        let titleLabel = UILabel()
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
+        titleLabel.textColor = UIColor(hex: "#6E7170")
         switch self.viewModel.sequenceData()?[section].template {
         case .creditScore:
-            return (self.viewModel.cardData(for: .creditScore) as? CreditScoreModel)?.sectionHeader
+            titleLabel.text = (self.viewModel.cardData(for: .creditScore) as? CreditScoreModel)?.sectionHeader
         case .linkPersuasionCard:
-            return (self.viewModel.cardData(for: .linkPersuasionCard) as? LinkPersuasionModel)?.sectionHeader
-        default: return nil
+            titleLabel.text = (self.viewModel.cardData(for: .linkPersuasionCard) as? LinkPersuasionModel)?.sectionHeader
+        default:
+            titleLabel.text = nil
         }
+        
+        headerView.addSubview(titleLabel)
+        
+        // Add constraints to position titleLabel within headerView
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 24),
+            titleLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 0),
+            titleLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 0),
+            titleLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 0)
+        ])
+        
+        return headerView
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         self.viewModel.noOfSection()

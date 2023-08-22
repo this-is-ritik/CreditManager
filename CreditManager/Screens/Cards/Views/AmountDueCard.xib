@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,18 +18,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5E2-FA-9GA">
-                        <rect key="frame" x="0.0" y="11" width="713" height="315"/>
+                        <rect key="frame" x="24" y="0.0" width="665" height="322"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZF-Z7-vRp">
-                        <rect key="frame" x="0.0" y="0.0" width="713" height="317"/>
+                        <rect key="frame" x="24" y="0.0" width="665" height="314"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gPH-S7-Ag5">
-                                <rect key="frame" x="16" y="16" width="681" height="231"/>
+                                <rect key="frame" x="16" y="16" width="633" height="228"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-ZX-ayj">
-                                <rect key="frame" x="16" y="257" width="681" height="44"/>
+                                <rect key="frame" x="16" y="254" width="633" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dhb-qN-DKc"/>
                                 </constraints>
@@ -52,13 +52,14 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="7ZF-Z7-vRp" firstAttribute="top" secondItem="7YW-eg-nmP" secondAttribute="top" id="Aq8-a7-r8x"/>
-                    <constraint firstItem="5E2-FA-9GA" firstAttribute="centerY" secondItem="7YW-eg-nmP" secondAttribute="centerY" id="Ggq-Xh-00K"/>
-                    <constraint firstItem="7ZF-Z7-vRp" firstAttribute="leading" secondItem="7YW-eg-nmP" secondAttribute="leading" id="jAS-u2-mbH"/>
-                    <constraint firstItem="5E2-FA-9GA" firstAttribute="centerX" secondItem="7YW-eg-nmP" secondAttribute="centerX" id="k2t-R7-i4p"/>
-                    <constraint firstItem="5E2-FA-9GA" firstAttribute="width" secondItem="7ZF-Z7-vRp" secondAttribute="width" id="pAK-8o-PiD"/>
-                    <constraint firstAttribute="trailing" secondItem="7ZF-Z7-vRp" secondAttribute="trailing" id="qe7-mS-2px"/>
-                    <constraint firstItem="5E2-FA-9GA" firstAttribute="height" secondItem="7YW-eg-nmP" secondAttribute="height" multiplier="0.934718" id="qwm-IN-esa"/>
-                    <constraint firstAttribute="bottom" secondItem="7ZF-Z7-vRp" secondAttribute="bottom" constant="20" id="u6r-bM-2aa"/>
+                    <constraint firstItem="5E2-FA-9GA" firstAttribute="leading" secondItem="7ZF-Z7-vRp" secondAttribute="leading" id="LIs-Wc-JeY"/>
+                    <constraint firstItem="7ZF-Z7-vRp" firstAttribute="bottom" secondItem="5E2-FA-9GA" secondAttribute="bottom" constant="-8" id="W6j-4L-Kxx"/>
+                    <constraint firstItem="5E2-FA-9GA" firstAttribute="trailing" secondItem="7ZF-Z7-vRp" secondAttribute="trailing" id="axS-PO-PMI"/>
+                    <constraint firstItem="5E2-FA-9GA" firstAttribute="width" secondItem="7ZF-Z7-vRp" secondAttribute="width" id="f8G-f6-Usr"/>
+                    <constraint firstItem="7ZF-Z7-vRp" firstAttribute="leading" secondItem="7YW-eg-nmP" secondAttribute="leading" constant="24" id="jAS-u2-mbH"/>
+                    <constraint firstAttribute="trailing" secondItem="7ZF-Z7-vRp" secondAttribute="trailing" constant="24" id="qe7-mS-2px"/>
+                    <constraint firstItem="5E2-FA-9GA" firstAttribute="top" secondItem="7ZF-Z7-vRp" secondAttribute="top" id="rz6-Mw-WCd"/>
+                    <constraint firstAttribute="bottom" secondItem="7ZF-Z7-vRp" secondAttribute="bottom" constant="23" id="u6r-bM-2aa"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
